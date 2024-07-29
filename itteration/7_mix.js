@@ -1,14 +1,14 @@
-// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-// const newNums = myNums.map((num) => {
-//     return num + 10 ;
-// })
-// console.log(newNums);
-// // result comes in a array [result]
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const newNums = myNums.map((num) => {
+    return num + 10 ;
+})
+console.log(newNums);
+// result comes in a array [result]
 
-// myNums.forEach((num) =>{
-//    console.log(num+10) ;
-// })
-// // here result is not in array.
+myNums.forEach((num) =>{
+   console.log(num+10) ;
+})
+// here result is not in array.
 
 
 //chaining
