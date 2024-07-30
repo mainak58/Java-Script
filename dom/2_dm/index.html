@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+    <ul class="language" >
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+
+<script>
+
+    function addlanguage(lang) {
+       const pushlanguage = document.createElement('li')
+       pushlanguage.innerHTML = `${lang}`
+       document.querySelector('.language').appendChild(pushlanguage)
+    }
+    addlanguage("mainak")
+    addlanguage("typescript")
+
+    
+    function addOptlang(optlang){
+        const pushopt = document.createElement('li')
+        pushopt.appendChild(document.createTextNode(optlang))
+        document.querySelector('.language').appendChild(pushopt)
+
+    }
+
+    addOptlang("myname")
+    addOptlang("signature")
+    
+    // edit
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
